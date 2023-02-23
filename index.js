@@ -404,6 +404,7 @@ async function run() {
       roleDurationSeconds =
         core.getInput("role-duration-seconds", { required: false }) ||
         DEFAULT_ROLE_DURATION_FOR_OIDC_ROLES;
+      console.log(webIdentityToken);
       // We don't validate the credentials here because we don't have them yet when using OIDC.
     } else {
       // Regardless of whether any source credentials were provided as inputs,
