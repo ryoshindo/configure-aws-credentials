@@ -176,7 +176,7 @@ function exportCredentials(params) {
 
   // AWS_ACCESS_KEY_ID:
   // Specifies an AWS access key associated with an IAM user or role
-  core.setSecret(accessKeyId);
+  //core.setSecret(accessKeyId);
   core.exportVariable("AWS_ACCESS_KEY_ID", accessKeyId);
 
   // AWS_SECRET_ACCESS_KEY:
