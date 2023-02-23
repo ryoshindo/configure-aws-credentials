@@ -399,6 +399,8 @@ async function run() {
     // The only way to assume the role is via GitHub's OIDC provider.
     let sourceAccountId;
     let webIdentityToken;
+    console.log("wassyoi");
+    console.log(useGitHubOIDCProvider());
     if (useGitHubOIDCProvider()) {
       webIdentityToken = await core.getIDToken(audience);
       roleDurationSeconds =
